@@ -1,0 +1,52 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.navBoton{
+    height: 10%;
+    width: 19%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    /* color: white; */
+}
+
+.navLink{
+    color: white;
+}
+
+.navName{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+     width: 70%;
+}
+
+.navImagen{
+    width: 8%;
+}
+
+.navBotonResponsive{
+    display: flex;
+}
+
+@media screen and (min-width : 200px) and (max-width : 780px) {
+    .navContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 240px;
+        margin: 0
+    }
+
+    .navBotonResponsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 80px;
+    }
+  }
+  

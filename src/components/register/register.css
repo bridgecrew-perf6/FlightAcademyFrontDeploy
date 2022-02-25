@@ -1,0 +1,12 @@
+.arrowBack {
+        transform: scale(0.5);
+}
+
+.goBackLogin{
+    text-decoration: none;
+}
+
+.btnRegister:hover{
+    text-decoration: underline;
+    color: black;
+}
