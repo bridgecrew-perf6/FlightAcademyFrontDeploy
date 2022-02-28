@@ -1,7 +1,7 @@
 import "./navBar.css";
 import React from "react";
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, /*NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText */ } from 'reactstrap';
-import foto2 from '../../images/foto2.png'
+import foto2 from '../../images/logo.png';
 //import Link from 'react-router-dom';
 
 export default function NavBar() {
@@ -9,49 +9,46 @@ export default function NavBar() {
 
 
     return (
-        <div>
-            <div style={{
-                display: 'block', width: 400, marginTop: 50
-            }}>
+        
+            
                 <Navbar
                     color="dark"
-                    container="fluid"
-                    dark
-                    expand="lg"
-                    fixed="top"
-                    bgcolor="black"
-                    light
+
+                    
+                   
+                    
+                    
                     className="navContainer"
                 >
                     <div className="navName">
                         <img className="navImagen" alt='imagen de flight academy' src={foto2} />
-                        <NavbarBrand href="/">
-                            Flight academy
+                        <NavbarBrand href="/" className="navBrand">
+                        <h5 className="h1-butons-tittle"> Flight academy</h5>
                         </NavbarBrand>
                     </div>
-                    {/* <button onClick={() => { setIsOpen(!isOpen) }} /> */}
+                    
                     <div className="navBoton">
-                        <div className="navBotonResponsive">
-                            <NavbarBrand href="/sobre-nosotros">
-                                Sobre nosotros
+                      
+                            <NavbarBrand href="/sobre-nosotros" className="navBrand">
+                                <h5 className="h1-butons-tittle">Sobre nosotros</h5>
                             </NavbarBrand>
-                            <NavbarBrand href="/cursos">
-                                Cursos
+                            <NavbarBrand href="/cursos" className="navBrand">
+                            <h5 className="h1-butons-tittle">Cursos</h5>
                             </NavbarBrand>
-                            <NavbarBrand href="/estudiantes">
-                                Estudiantes
+                            <NavbarBrand href="/estudiantes" className="navBrand">
+                            <h5 className="h1-butons-tittle"> Estudiantes</h5>
                             </NavbarBrand>
-                            <NavbarBrand href="/galeria">
-                                Galería
+                            <NavbarBrand href="/galeria" className="navBrand">
+                            <h5 className="h1-butons-tittle"> Galería</h5>
                             </NavbarBrand>
-                            <NavbarBrand href="/login">
-                                Turnos
+                            <NavbarBrand href="/login" className="navBrand">
+                            <h5 className="h1-butons-tittle"> Turnos</h5>
                             </NavbarBrand>
-                        </div>
+                        
                     </div>
                 </Navbar>
-            </div>
-        </div>
+            
+        
     )
 
 }

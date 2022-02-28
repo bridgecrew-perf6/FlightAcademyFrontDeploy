@@ -11,8 +11,8 @@ import Footer from '../footer/footer';
 export default function Landing() {
     return (
         <div className="contenedorLanding">
-            <div >
-                {/* <div className="probando"> */}
+            
+             
                 <NavBar />
                 <div className="cursosGrid">
                     <div className="containerCursosGrid">
@@ -94,7 +94,6 @@ export default function Landing() {
                         </Card>
                     </div>
                 </div>
-            </div>
             <Footer />
         </div>
     )

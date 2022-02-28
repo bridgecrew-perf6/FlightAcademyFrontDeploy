@@ -1,12 +1,4 @@
-.contenedorLanding{
-    margin-top: 55px;
-    /* border: 5px solid blue; */
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; */
-    /* z-index: 100; */
-}
+
 
 .images{
     /* height:-3%; */
@@ -86,10 +78,11 @@
 }
 
 .imagenLanding{
-    width: 30%;
-    /* height: 50%; */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 15px;
-    margin-bottom: 2%;
+    margin: 2%;
 }
 
 
@@ -126,6 +119,17 @@
     color: black;
     background-color: white;
   }
+  html, body {
+   
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .contenedorLanding{
+      width: 100%;
+      height: 100%;
+    
+  }
   
   .botonVolverLogin:hover {
     background-color: black;
@@ -138,61 +142,18 @@
 } */
 
 @media screen and (min-width : 781px) and (max-width : 1450px) {
-    .cursosGrid{
-        margin-top: 100px;
-    }
+ 
 
-    .pruebaaa{
-        height: 320px;
-    }
+  
   }
 
-  @media screen and (min-width : 650px) and (max-width : 780px) {
-    .cursosGrid{
-        margin-top: 255px;
-    }
+ 
 
-    .pruebaaa{
-        height: 300px;
-    }
+  @media screen and (min-width : 200px) and (max-width : 650px) {
+    
+.containerCursosGrid{
+    grid-template-columns: auto;
+}
+    
   }
 
-  @media screen and (min-width : 510px) and (max-width : 650px) {
-    .cursosGrid{
-        margin-top: 255px;
-    }
-
-    .pruebaaa{
-        height: 350px;
-    }
-  }
-
-  @media screen and (min-width : 405px) and (max-width : 510px) {
-    .cursosGrid{
-        margin-top: 255px;
-    }
-
-    .pruebaaa{
-        height: 400px;
-    }
-  }
-
-  @media screen and (min-width : 355px) and (max-width : 405px) {
-    .cursosGrid{
-        margin-top: 255px;
-    }
-
-    .pruebaaa{
-        height: 450px;
-    }
-  }
-
-  @media screen and (min-width : 250px) and (max-width : 355px) {
-    .cursosGrid{
-        margin-top: 255px;
-    }
-
-    .pruebaaa{
-        height: 500px;
-    }
-  }
